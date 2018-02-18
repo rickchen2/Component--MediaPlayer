@@ -9,6 +9,7 @@ import android.media.MediaPlayer;
 
 public class AudioPlayer {
     private MediaPlayer mPlayer;
+    private final static int MAX_VOLUME = 100;
 
     public void play(Context context){
             mPlayer = MediaPlayer.create(context, R.raw.sample);
@@ -22,11 +23,11 @@ public class AudioPlayer {
     }
 
     public void volumnUp(){
-        mPlayer.setVolume(0.8f, 0.8f);
+        mPlayer.setVolume(1, 1);
     }
 
     public void volumnDown(){
-        mPlayer.setVolume(0.2f, 0.2f);
+        mPlayer.setVolume(0.1f, 0.1f);
     }
 
     public void stop() {

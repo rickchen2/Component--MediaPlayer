@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
                 mPlayer.volumnUp();
             }
         });
+
+        mPlayButton = (Button)findViewById(R.id.volumn_down_button);
+        mPlayButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                mPlayer.volumnDown();
+            }
+        });
     }
 
 }
