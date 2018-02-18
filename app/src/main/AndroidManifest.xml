@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.blankmemo.mediaplayer_example">
+    package="com.blankmemo.component_mediaplayer">
 
     <application
         android:allowBackup="true"

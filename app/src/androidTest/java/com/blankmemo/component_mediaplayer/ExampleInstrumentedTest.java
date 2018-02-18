@@ -1,4 +1,4 @@
-package com.blankmemo.mediaplayer_example;
+package com.blankmemo.component_mediaplayer;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

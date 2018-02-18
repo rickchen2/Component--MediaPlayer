@@ -1,9 +1,10 @@
-package com.blankmemo.mediaplayer_example;
+package com.blankmemo.component_mediaplayer;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity {
     private AudioPlayer mPlayer = new AudioPlayer();
@@ -24,7 +25,14 @@ public class MainActivity extends AppCompatActivity {
         mPlayButton = (Button)findViewById(R.id.pause_button);
         mPlayButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                mPlayer.pause(MainActivity.this);
+                mPlayer.pause();
+            }
+        });
+
+        mPlayButton = (Button)findViewById(R.id.volumn_up_button);
+        mPlayButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                mPlayer.volumnUp();
             }
         });
     }

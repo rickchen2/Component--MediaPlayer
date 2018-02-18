@@ -1,4 +1,4 @@
-package com.blankmemo.mediaplayer_example;
+package com.blankmemo.component_mediaplayer;
 
 import org.junit.Test;
 

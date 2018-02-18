@@ -1,4 +1,4 @@
-package com.blankmemo.mediaplayer_example;
+package com.blankmemo.component_mediaplayer;
 
 import android.content.Context;
 import android.media.MediaPlayer;
@@ -15,10 +15,18 @@ public class AudioPlayer {
             mPlayer.start();
     }
 
-    public void pause(Context context){
+    public void pause(){
         if (mPlayer.isPlaying()) {
             mPlayer.pause();
         }
+    }
+
+    public void volumnUp(){
+        mPlayer.setVolume(0.8f, 0.8f);
+    }
+
+    public void volumnDown(){
+        mPlayer.setVolume(0.2f, 0.2f);
     }
 
     public void stop() {
