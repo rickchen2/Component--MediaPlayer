@@ -11,8 +11,12 @@ public class AudioPlayer {
     private MediaPlayer mPlayer;
     private final static int MAX_VOLUME = 100;
 
-    public void play(Context context){
-            mPlayer = MediaPlayer.create(context, R.raw.sample);
+    //constructor for Audio Player
+    public AudioPlayer(Context context, int audioResourceID) {
+        mPlayer = MediaPlayer.create(context, audioResourceID);
+    }
+
+    public void play(){
             mPlayer.start();
     }
 

@@ -7,7 +7,7 @@ import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
-    private AudioPlayer mPlayer = new AudioPlayer();
+    private AudioPlayer mPlayer;
     private Button mPlayButton;
 
     @Override
@@ -15,10 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //create a new Audio Player Object
+        mPlayer = new AudioPlayer(this, R.raw.sample);
+
+
         mPlayButton = (Button)findViewById(R.id.play_button);
         mPlayButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                mPlayer.play(MainActivity.this);
+                mPlayer.play();
             }
         });
 
