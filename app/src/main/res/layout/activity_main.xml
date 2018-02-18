@@ -7,17 +7,17 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <button
-        android:id="+id/play_button"
+    <Button
+        android:id="@+id/play_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play"
         android:textAllCaps="true"
         android:padding="4dp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp" />
 
-    <button
-        android:id="+id/pause_button"
+    <Button
+        android:id="@+id/pause_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pause"
