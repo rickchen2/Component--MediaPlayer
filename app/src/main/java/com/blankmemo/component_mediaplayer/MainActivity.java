@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         mPlayButton = (Button)findViewById(R.id.play_button);
         mPlayButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                Toast.makeText(MainActivity.this, "play", Toast.LENGTH_SHORT).show();
                 mPlayer.play();
             }
         });
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         mPlayButton = (Button)findViewById(R.id.pause_button);
         mPlayButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                Toast.makeText(MainActivity.this, "pause", Toast.LENGTH_SHORT).show();
                 mPlayer.pause();
             }
         });
